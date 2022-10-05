@@ -1,0 +1,32 @@
+[
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 0,
+    "LibraryId": "0690fd65-8378-4fd3-a039-37553424a447",
+    "LibraryLogicalName": "cat_powercatcomponentlibrary_0be3a",
+    "LibraryVersion": "2022-06-22T15:30:13Z",
+    "OriginalComponentDefinitionTemplateId": "174a744e6baa47b4857cec5814d6422e",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2022-06-22T15:52:51.662+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 0,
+    "LibraryId": "0690fd65-8378-4fd3-a039-37553424a447",
+    "LibraryLogicalName": "cat_powercatcomponentlibrary_0be3a",
+    "LibraryVersion": "2022-06-22T15:30:13Z",
+    "OriginalComponentDefinitionTemplateId": "45ef3b58cba141ccb72325a8844e9634",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2022-06-22T15:52:51.662+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "0690fd65-8378-4fd3-a039-37553424a447",
+    "LibraryLogicalName": "cat_powercatcomponentlibrary_0be3a",
+    "LibraryVersion": "2022-06-22T15:30:13Z",
+    "OriginalComponentDefinitionTemplateId": "599bd02396dc426681a20784c48547f9",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2022-06-22T15:52:51.662+00:00"
+  }
+]

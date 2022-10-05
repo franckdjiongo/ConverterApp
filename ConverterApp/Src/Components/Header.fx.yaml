@@ -1,0 +1,24 @@
+Header As CanvasComponent:
+    BackgroundColor: =Color.AliceBlue
+    Fill: =RGBA(0, 0, 0, 0)
+    HeaderText: ="Home"
+    Height: =80
+    TextColor: =Color.Red
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =Header.TextColor
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =Header.BackgroundColor
+        FontWeight: =FontWeight.Bold
+        Height: =Parent.Height
+        Size: =30
+        Text: =Header.HeaderText
+        Width: =Parent.Width
+        ZIndex: =1
+

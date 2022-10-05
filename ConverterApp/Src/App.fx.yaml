@@ -1,0 +1,30 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =ClearCollect(
+            colCurrencies,
+            CurrencyConverters
+        );
+        ForAll(
+            colCurrencies,
+            Patch(
+                CurrencyConverters,
+                ThisRecord,
+                {'Converted Amount': 0,'Is Changed':"no"}
+            )
+        );
+        Refresh(CurrencyConverters);
+        Set(
+            varFrom,
+            "CAD"
+        );
+        Set(
+            varStartTimer,
+            false
+        );
+        Set(
+            varAmountToConvert,
+            Value(0)
+        );
+        Set(varLoading, false);
+

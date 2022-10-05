@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre4a_currencyconverters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre4a_currencyconverter",
+    "MaxGetRowsCount": 500,
+    "Name": "CurrencyConverters",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre4a_amounttoconvert": "Amount to convert",
+      "cre4a_convertedamount": "Converted Amount",
+      "cre4a_countrycurrency": "Country Currency",
+      "cre4a_countryflag": "Country Flag",
+      "cre4a_currencyconverter_AsyncOperations": "System Jobs",
+      "cre4a_currencyconverter_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre4a_currencyconverter_DuplicateBaseRecord": "Duplicate Records (cre4a_currencyconverter_DuplicateBaseRecord)",
+      "cre4a_currencyconverter_DuplicateMatchingRecord": "Duplicate Records (cre4a_currencyconverter_DuplicateMatchingRecord)",
+      "cre4a_currencyconverter_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre4a_currencyconverter_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre4a_currencyconverter_ProcessSession": "Process Sessions",
+      "cre4a_currencyconverter_SyncErrors": "Sync Errors",
+      "cre4a_currencyconverterid": "CurrencyConverter",
+      "cre4a_currencyvalue": "Currency Value",
+      "cre4a_from": "From",
+      "cre4a_ischanged": "Is Changed",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "CurrencyConverters",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "CurrencyConverters (Views)",
+    "Name": "_cre4a_currencyconverter_views",
+    "RelatedEntityName": "CurrencyConverters",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "087acef7-418b-421f-a037-b1e435bd0fb1": "Active CurrencyConverters",
+      "224eb564-d2fc-47ab-80c6-881d272ccef7": "CurrencyConverter Associated View",
+      "5c67c236-3cd6-4c6c-8955-8180550e5fc3": "Inactive CurrencyConverters",
+      "857c9de1-2042-42a3-a66d-80cb05c467f8": "CurrencyConverter Advanced Find View",
+      "af0798df-6db0-4ac1-a19b-f0786d200367": "CurrencyConverter Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (CurrencyConverters)",
+    "Name": "cre4a_currencyconverter_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "CurrencyConverters"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "CurrencyConverters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (CurrencyConverters)",
+    "Name": "cre4a_currencyconverter_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "CurrencyConverters"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "CurrencyConverters",
+    "Type": "OptionSetInfo"
+  }
+]

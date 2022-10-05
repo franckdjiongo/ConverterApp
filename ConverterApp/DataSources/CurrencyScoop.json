@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961",
+    "Name": "CurrencyScoop",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

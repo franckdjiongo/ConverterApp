@@ -1,0 +1,61 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://canada-001.azure-apim.net/apim/currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="CurrencyScoop" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Currency Scoop"></doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://canada-001.azure-apim.net/apim/currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <integer name="Convert_responses_default_def_meta_def_code_def" />
+      <string name="Convert_responses_default_def_meta_def_disclaimer_def" />
+      <object name="Convert_responses_default_def_meta_def">
+        <property name="code" type="integer" />
+        <property name="disclaimer" type="string" />
+      </object>
+      <integer name="Convert_responses_default_def_response_def_timestamp_def" />
+      <string name="Convert_responses_default_def_response_def_date_def" />
+      <string name="Convert_responses_default_def_response_def_from_def" />
+      <string name="Convert_responses_default_def_response_def_to_def" />
+      <integer name="Convert_responses_default_def_response_def_amount_def" />
+      <number name="Convert_responses_default_def_response_def_value_def" />
+      <object name="Convert_responses_default_def_response_def">
+        <property name="timestamp" type="integer" />
+        <property name="date" type="string" />
+        <property name="from" type="string" />
+        <property name="to" type="string" />
+        <property name="amount" type="integer" />
+        <property name="value" type="number" />
+      </object>
+      <object name="Convert_responses_default_def">
+        <property name="meta" typeRef="Convert_responses_default_def_meta_def" />
+        <property name="response" typeRef="Convert_responses_default_def_response_def" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://canada-001.azure-apim.net/apim/currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961">
+    <resource path="/{connectionId}/v1/convert">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Convert" siena:isDeprecated="false">
+        <doc title="Convert&#xA;Perform a single currency conversion for a specified amount" />
+        <request>
+          <param style="query" name="from" type="xs:string" required="true">
+            <doc title="base currency symbol" />
+          </param>
+          <param style="query" name="to" type="xs:string" required="true">
+            <doc title="foreign currency symbol" />
+          </param>
+          <param style="query" name="amount" type="xs:double" required="true">
+            <doc title="base currency amount" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Convert_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

@@ -1,0 +1,23 @@
+{
+  "10600ee7-1cfd-466b-9e98-4060b4da0a6f": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Currency Scoop",
+      "iconUri": "https://prodapiicons.cdn.powerappscdn.net/20220314t000000z32c18deb0ed545f9a865cbfc751509bf/customconnectoricon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "CurrencyScoop"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "10600ee7-1cfd-466b-9e98-4060b4da0a6f"
+  }
+}
