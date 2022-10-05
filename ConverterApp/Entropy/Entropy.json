@@ -49,7 +49,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/05/2022 18:32:00",
+  "HeaderLastSavedDateTimeUTC": "10/05/2022 18:35:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "10600ee7-1cfd-466b-9e98-4060b4da0a6f": "\"/providers/microsoft.powerapps/apis/shared_currency-20scoop-5fc97e8ea22074a675-5fb4c08f1ec97ea961/connections/7544c0e1a16144b3a1440c2223e78500\""

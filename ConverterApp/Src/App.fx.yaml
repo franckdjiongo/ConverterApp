@@ -15,10 +15,6 @@ App As appinfo:
         );
         Refresh(CurrencyConverters);
         Set(
-            varFrom,
-            "USD"
-        );
-        Set(
             varStartTimer,
             false
         );
