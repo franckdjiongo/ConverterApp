@@ -28,7 +28,7 @@
       "disablecdsfileandlargeimage": false,
       "dynamicschema": false,
       "enableappembeddingux": false,
-      "enablecommandbar": true,
+      "enablecommandbar": false,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
       "enableeditcacherefreshfrequency": false,
